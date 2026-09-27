@@ -1,0 +1,8 @@
+{
+  "name": "BloodBridge",
+  "description": "Emergency blood availability and donor matching system connecting donors with patients and blood banks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
