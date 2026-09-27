@@ -104,7 +104,7 @@ fun StatusBadge(
     status: String,
     modifier: Modifier = Modifier
 ) {
-    val (bgColor, textColor, label) = when (status.uppercase()) {
+    val badgeInfo: Triple<Color, Color, String> = when (status.uppercase()) {
         "AVAILABLE", "APPROVED", "ACTIVE", "VERIFIED", "ACCEPTED" ->
             Triple(MedicalGreenContainer, MedicalGreen, status)
         "NOT AVAILABLE", "PENDING", "UNVERIFIED" ->
@@ -115,6 +115,9 @@ fun StatusBadge(
             Triple(Color(0xFFE0F2FE), MedicalBlue, "FULFILLED")
         else -> Triple(Color(0xFFF1F5F9), TextSecondary, status)
     }
+    val bgColor = badgeInfo.first
+    val textColor = badgeInfo.second
+    val label = badgeInfo.third
 
     Box(
         modifier = modifier

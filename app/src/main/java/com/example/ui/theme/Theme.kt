@@ -12,43 +12,44 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = BloodRedLight,
+    primary = BizBlueLight,
     onPrimary = Color.White,
-    primaryContainer = BloodRedDark,
+    primaryContainer = BizBlue,
     onPrimaryContainer = Color.White,
-    secondary = MedicalBlue,
+    secondary = BizEmeraldLight,
     onSecondary = Color.White,
-    tertiary = MedicalTeal,
-    background = DarkBackground,
-    surface = DarkSurface,
+    secondaryContainer = BizEmerald,
+    tertiary = BizViolet,
+    background = BizDarkBackground,
+    surface = BizDarkSurface,
     onBackground = Color.White,
     onSurface = Color.White,
-    surfaceVariant = DarkCard,
+    surfaceVariant = BizDarkCard,
     onSurfaceVariant = Color(0xFFCBD5E1),
-    outline = Color(0xFF475569)
+    outline = Color(0xFF334155)
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = BloodRed,
+    primary = BizBluePrimary,
     onPrimary = Color.White,
-    primaryContainer = BloodRedContainer,
-    onPrimaryContainer = OnBloodRedContainer,
-    secondary = MedicalNavy,
+    primaryContainer = BizBlueContainer,
+    onPrimaryContainer = BizBlue,
+    secondary = BizEmerald,
     onSecondary = Color.White,
-    secondaryContainer = Color(0xFFF1F5F9),
-    onSecondaryContainer = Color(0xFF0F172A),
-    tertiary = MedicalBlue,
-    background = SurfaceLight,
-    surface = SurfaceCard,
-    onBackground = TextPrimary,
-    onSurface = TextPrimary,
-    surfaceVariant = Color(0xFFF8FAFC),
-    onSurfaceVariant = TextSecondary,
-    outline = BorderLight
+    secondaryContainer = BizEmeraldContainer,
+    onSecondaryContainer = Color(0xFF064E3B),
+    tertiary = BizViolet,
+    background = BizSurfaceLight,
+    surface = BizCardWhite,
+    onBackground = BizTextPrimary,
+    onSurface = BizTextPrimary,
+    surfaceVariant = Color(0xFFF1F5F9),
+    onSurfaceVariant = BizTextSecondary,
+    outline = BizBorder
 )
 
 @Composable
-fun BloodBridgeTheme(
+fun BizAdvisorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit

@@ -3,6 +3,6 @@
     <item
         android:width="66dp"
         android:height="66dp"
-        android:drawable="@drawable/bloodbridge_logo_1790496385404"
+        android:drawable="@drawable/bizadvisor_logo_1790499018154"
         android:gravity="center" />
 </layer-list>

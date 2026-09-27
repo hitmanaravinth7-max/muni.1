@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "BloodBridge"
+rootProject.name = "BizAdvisor AI"
 
 include(":app")

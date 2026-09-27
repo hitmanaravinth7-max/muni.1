@@ -1,6 +1,6 @@
 {
-  "name": "BloodBridge",
-  "description": "Emergency blood availability and donor matching system connecting donors with patients and blood banks.",
+  "name": "BizAdvisor AI",
+  "description": "AI-Powered Business Consultant leveraging predictive machine learning models and Gemini Generative AI for strategic planning, financial diagnostics, and executive guidance.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
